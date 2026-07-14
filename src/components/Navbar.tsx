@@ -52,17 +52,56 @@ export default function Navbar() {
           <motion.a
             href="#home"
             onClick={(e) => handleNavClick(e, "#home")}
-            className="group relative flex items-center gap-2"
+            className="group flex items-center gap-3 focus:outline-none"
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
           >
-            <span className="text-xl font-bold tracking-tight text-champagne md:text-2xl">
-              MG
-            </span>
-            <span className="hidden text-xs font-light tracking-[0.3em] uppercase text-silver-muted md:block">
-              Portfolio
-            </span>
-            <span className="absolute -bottom-1 left-0 h-px w-0 bg-gradient-to-r from-champagne to-transparent transition-all duration-300 group-hover:w-full" />
+            {/* Elegant Geometric Badge Logo Icon */}
+            <div className="relative flex items-center justify-center w-9 h-9 md:w-10 md:h-10 rounded-xl bg-gradient-to-br from-zinc-900 via-zinc-900/80 to-black border border-zinc-800 group-hover:border-champagne/40 shadow-[0_0_15px_rgba(253,230,138,0.05)] group-hover:shadow-[0_0_20px_rgba(253,230,138,0.2)] transition-all duration-500 overflow-hidden">
+              {/* Subtle background glow inside the icon badge */}
+              <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-champagne/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              
+              {/* Stylized M Monogram SVG */}
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                className="w-5 h-5 md:w-5.5 md:h-5.5 transition-transform duration-500 group-hover:scale-110"
+              >
+                <defs>
+                  <linearGradient id="navLogoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stopColor="#fde68a" />
+                    <stop offset="50%" stopColor="#d4af37" />
+                    <stop offset="100%" stopColor="#f59e0b" />
+                  </linearGradient>
+                </defs>
+                {/* Architectural stylized 'M' path with geometric elegance */}
+                <path
+                  d="M3 18V7.5C3 6.67157 3.67157 6 4.5 6C5.10929 6 5.63585 6.36531 5.86477 6.91448L11.077 19.4239C11.4552 20.3315 12.5448 20.3315 12.923 19.4239L18.1352 6.91448C18.3642 6.36531 18.8907 6 19.5 6C20.3284 6 21 6.67157 21 7.5V18"
+                  stroke="url(#navLogoGradient)"
+                  strokeWidth="2.2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+                <circle cx="12" cy="7.5" r="1.5" fill="url(#navLogoGradient)" />
+              </svg>
+            </div>
+
+            {/* Elegant Wordmark & Subtitle */}
+            <div className="flex flex-col justify-center">
+              <div className="flex items-center tracking-tight leading-none">
+                <span className="text-base md:text-lg font-bold text-foreground transition-colors group-hover:text-champagne-light">
+                  Mayank
+                </span>
+                <span className="text-base md:text-lg font-light text-champagne ml-1">
+                  Garg
+                </span>
+                <span className="w-1.5 h-1.5 rounded-full bg-champagne/80 ml-1.5 self-end mb-1 transition-transform duration-300 group-hover:scale-125 group-hover:bg-champagne hidden sm:inline-block" />
+              </div>
+              <span className="text-[9px] md:text-[10px] font-medium tracking-[0.25em] uppercase text-zinc-500 transition-colors group-hover:text-zinc-400 mt-0.5">
+                Software Engineer
+              </span>
+            </div>
           </motion.a>
 
           {/* Desktop Nav */}
