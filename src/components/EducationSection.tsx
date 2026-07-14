@@ -19,13 +19,6 @@ const education = [
     location: "Dehradun, India",
     details: "Graduating with a CGPA of 7.66. Core coursework includes Data Structures, Algorithms, Database Management Systems, and Cloud Computing.",
   },
-  {
-    degree: "Post Graduate Certificate Programme in Advanced Computing (PGCP-AC)",
-    institution: "Centre for Development of Advanced Computing (C-DAC)",
-    date: "Feb 2026 Batch",
-    location: "Bangalore, India",
-    details: "Specialized training program focusing on advanced software engineering, system software development, and modern computing architectures.",
-  }
 ];
 
 export default function EducationSection() {
@@ -51,9 +44,9 @@ export default function EducationSection() {
           </motion.h3>
         </motion.div>
 
-        <div className="relative grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8">
+        <div className="relative grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-8 max-w-5xl mx-auto">
           {/* Horizontal line for desktop connecting the dots */}
-          <div className="hidden md:block absolute top-[20px] left-[16.6%] right-[16.6%] h-0.5 bg-gradient-to-r from-transparent via-zinc-800 to-transparent z-0" />
+          <div className="hidden md:block absolute top-[20px] left-[25%] right-[25%] h-0.5 bg-gradient-to-r from-transparent via-zinc-800 to-transparent z-0" />
           
           {education.map((item, index) => (
             <motion.div

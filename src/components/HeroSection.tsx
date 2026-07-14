@@ -271,7 +271,7 @@ export default function HeroSection() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 1.5, duration: 0.7 }}
         >
-          B.Tech (Hons.) Computer Science Engineering — UPES &apos;25 &nbsp;·&nbsp; Feb 2026 C-DAC Batch
+          B.Tech (Hons.) Computer Science Engineering — UPES &apos;25
           <br />
           Building elegant, high-performance digital experiences.
         </motion.p>

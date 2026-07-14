@@ -66,7 +66,7 @@ export default function AboutSection() {
             className="lg:col-span-5 flex flex-col gap-6 text-zinc-400 font-light leading-relaxed text-lg"
           >
             <p>
-              I am a Software Developer and Full-Stack Engineer with a strong foundation in <span className="text-zinc-200 font-medium">Computer Science Engineering</span> from UPES (B.Tech Hons, 2025). I am currently expanding my expertise through the C-DAC program (Feb 2026 Batch).
+              I am a Software Developer and Full-Stack Engineer with a strong foundation in <span className="text-zinc-200 font-medium">Computer Science Engineering</span> from UPES (B.Tech Hons, 2025).
             </p>
             <p>
               My passion lies in architecting scalable applications and crafting seamless user experiences. I thrive in environments where I can leverage my skills to solve complex problems and deliver high-quality, performant software.
